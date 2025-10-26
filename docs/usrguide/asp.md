@@ -98,12 +98,12 @@ Use `ExtractClingoCall()` to extract specific predicates from the solution model
 
 ```
 # Extract selected items from each model
-SelectedItems(item, model_id) :-
-  ExtractClingoCall(item, predicate: "Selected", model_id) = Models();
+SelectedItems(item, model_id:) :-
+  ExtractClingoCall(item, predicate: "Selected", model_id:) = Models();
 
 # Extract multi-argument predicates
-Schedule(meeting, room, time, model_id) :-
-  ExtractClingoCall(meeting, room, time, predicate: "Schedule", model_id) = Models();
+Schedule(meeting, room, time, model_id:) :-
+  ExtractClingoCall(meeting, room, time, predicate: "Schedule", model_id:) = Models();
 ```
 
 ### Getting Optimal Solutions
