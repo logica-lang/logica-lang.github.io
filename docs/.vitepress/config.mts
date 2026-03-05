@@ -81,6 +81,7 @@ export default defineConfig({
             { text: 'Basic Operations', link: '/usrguide/basic-operators' },
             { text: 'Named Arguments', link: '/usrguide/named-arguments' },
             { text: 'Multiset Semantics', link: '/usrguide/multi-semantics' },
+            { text: 'Data Access', link: '/usrguide/data_access' },
           ]
         },
         {
